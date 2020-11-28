@@ -6,7 +6,7 @@ var apiEndpoint = "https://min-api.cryptocompare.com/"
 
 func main() {
 
-	fsyms := "BTC"
+	fsyms := "ETH"
 	tsyms := "USD"
 	var apiKey string
 
@@ -14,7 +14,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	if err := getPriceMultiFullWithHeader(fsyms, tsyms, apiKey); err != nil {
-		log.Fatal(err)
-	}
+	//if err := getPriceMultiFullWithHeader(fsyms, tsyms, apiKey); err != nil {
+	//	log.Fatal(err)
+	//}
 }

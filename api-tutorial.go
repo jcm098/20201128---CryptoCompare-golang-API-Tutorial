@@ -28,7 +28,7 @@ func getPriceMultiFull(fsyms, tsyms, apiKey string) error {
 		return fmt.Errorf("getPriceMultiFull, unmarshalling response, %s", err)
 	}
 
-	fmt.Println(respObj)
+	fmt.Println(json.MarshalIndent(body, "", "    "))
 
 	return nil
 }
